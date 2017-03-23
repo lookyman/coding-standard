@@ -1,0 +1,18 @@
+{
+  "name": "lookyman/coding-standard",
+  "description": "",
+  "license": "MIT",
+  "require": {
+    "php": "^7.0",
+    "squizlabs/php_codesniffer": "^2.8"
+  },
+  "require-dev": {
+    "slevomat/coding-standard": "^2.0",
+    "consistence/coding-standard": "^0.13.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lookyman\\CodingStandard\\": "CodingStandard/"
+    }
+  }
+}
