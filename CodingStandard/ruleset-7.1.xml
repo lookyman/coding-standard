@@ -35,7 +35,7 @@
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
         <properties>
-            <property name="usefulAnnotations" type="array" value="@dataProvider"/>
+            <property name="usefulAnnotations" type="array" value="@covers,@dataProvider,@expectedException,@expectedExceptionCode"/>
         </properties>
     </rule>
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
