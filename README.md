@@ -3,7 +3,7 @@
 Install with [Composer](https://getcomposer.org):
 
 ```sh
-composer require --dev lookyman/coding-standard
+composer require --dev lookyman/coding-standard:dev-master
 ```
 
 Then mention in `ruleset.xml`, on PHP 7.0:
