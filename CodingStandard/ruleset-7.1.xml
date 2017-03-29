@@ -39,6 +39,11 @@
         </properties>
     </rule>
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
+    <rule ref="Squiz.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array" value="sizeof=>count,delete=>unset,print=>echo,is_null=>null,create_function=>null,var_dump=>null"/>
+        </properties>
+    </rule>
     <!-- todo solve blank line at the beginning of class enforced by Squiz.WhiteSpace.MemberVarSpacing -->
     <!-- todo solve blank line at the beginning of class enforced by Squiz.WhiteSpace.FunctionSpacing -->
 </ruleset>
