@@ -4,4 +4,10 @@
         <exclude name="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
         <exclude name="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
     </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
+        <properties>
+            <property name="enableNullableTypeHints" value="false"/>
+            <property name="enableVoidTypeHint" value="false"/>
+        </properties>
+    </rule>
 </ruleset>
