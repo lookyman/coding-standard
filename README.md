@@ -1,5 +1,7 @@
 # Coding Standard
 
+Variation of [Slevomat Coding Standard](https://github.com/slevomat/coding-standard).
+
 Install with [Composer](https://getcomposer.org):
 
 ```sh
