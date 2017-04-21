@@ -39,7 +39,7 @@ final class FinalClassSniff implements \PHP_CodeSniffer_Sniff
 			)) {
 			$fix = $phpcsFile->addFixableError(
 				\sprintf(
-					'Class %s is neither abstract nor final.',
+					'Concrete class %s is not final.',
 					ClassHelper::getFullyQualifiedName($phpcsFile, $stackPtr)
 				),
 				$stackPtr,

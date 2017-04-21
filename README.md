@@ -5,7 +5,7 @@ Variation of [Slevomat Coding Standard](https://github.com/slevomat/coding-stand
 Install with [Composer](https://getcomposer.org):
 
 ```sh
-composer require --dev lookyman/coding-standard:^0.0.2
+composer require --dev lookyman/coding-standard:^0.0.3
 ```
 
 Then mention in `ruleset.xml`, on PHP 7.0:
