@@ -19,7 +19,7 @@
     </rule>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
         <properties>
-            <property name="forbiddenAnnotations" type="array" value="@author,@created,@version,@package,@copyright,@license"/>
+            <property name="forbiddenAnnotations" type="array" value="@author,@created,@version,@package,@copyright,@license,@throws"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
@@ -35,7 +35,7 @@
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
         <properties>
-            <property name="usefulAnnotations" type="array" value="@covers,@dataProvider,@expectedException,@expectedExceptionCode,@throws"/>
+            <property name="usefulAnnotations" type="array" value="@covers,@dataProvider,@expectedException,@expectedExceptionCode"/>
         </properties>
     </rule>
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
