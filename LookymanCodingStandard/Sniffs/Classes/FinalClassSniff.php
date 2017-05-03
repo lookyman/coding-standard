@@ -10,6 +10,8 @@ use SlevomatCodingStandard\Helpers\SuppressHelper;
 final class FinalClassSniff implements \PHP_CodeSniffer_Sniff
 {
 
+	const NAME = 'LookymanCodingStandard.Classes.FinalClass';
+
 	const CODE_NOT_FINAL_CLASS = 'NotFinalClass';
 
 	/**
@@ -26,7 +28,7 @@ final class FinalClassSniff implements \PHP_CodeSniffer_Sniff
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
 	 * @param \PHP_CodeSniffer_File $phpcsFile
 	 * @param int $stackPtr
-	 * @return void|int
+	 * @return void
 	 */
 	public function process(\PHP_CodeSniffer_File $phpcsFile, $stackPtr)
 	{
@@ -35,7 +37,7 @@ final class FinalClassSniff implements \PHP_CodeSniffer_Sniff
 			&& !SuppressHelper::isSniffSuppressed(
 				$phpcsFile,
 				$stackPtr,
-				\sprintf('LookymanCodingStandard.Classes.FinalClass.%s', self::CODE_NOT_FINAL_CLASS)
+				\sprintf('%s.%s', self::NAME, self::CODE_NOT_FINAL_CLASS)
 			)) {
 			$fix = $phpcsFile->addFixableError(
 				\sprintf(
@@ -52,4 +54,5 @@ final class FinalClassSniff implements \PHP_CodeSniffer_Sniff
 			}
 		}
 	}
+
 }
