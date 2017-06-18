@@ -1,0 +1,3 @@
+parameters:
+	autoload_files:
+		- %rootDir%/../../squizlabs/php_codesniffer/autoload.php
