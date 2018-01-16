@@ -1,8 +1,2 @@
-/tests
-.coveralls.yml
 .gitattributes export-ignore
 .gitignore export-ignore
-.travis.yml
-phpstan.neon
-phpunit.xml.dist
-ruleset.xml
